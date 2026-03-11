@@ -16,5 +16,8 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
+        name: Run Tests
+        run: pytest
+
       - name: Build Docker Image
         uses: docker build -t ml-devops-demo
